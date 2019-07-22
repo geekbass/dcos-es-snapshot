@@ -33,7 +33,7 @@ def register(es):
         print("\n\n[ERROR] Error: %s" % (str(e)))
 
 
-def snapshot():
+def snapshot(es):
     # Create Snapshot
     try:
         es.snapshot.create(repository=es_repository, snapshot=es_snapshot, wait_for_completion=True)
